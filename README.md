@@ -36,6 +36,7 @@ Para poder interactuar con la Blockchain de Ethereum, necesitamos hacerlo a trav
 1) Ingresar a "Visual Studio Code" y abrir el directorio en el cual vamos a trabajar. En nuestro caso: GetBalanceBlockchain.
 2) Abrir una terminal o consola para este directorio e instalar web3. Comando: npm i web3 (Esto nos crear una carpeta "node_modules" y un archivo "package-lock.json").
 3) Dentro del directorio "GetBalanceBlockchain", crear un archivo .js. En nuestro caso: app.js (Aquí escribimos nuestro código web3).
+4) Ejecutamos nuestra aplicación por terminal. Comando: node app.js
 
 En esta aplicación vas a encontrar la funcionalidad para poder leer el balance de una Address pública sobre la Blockchain Testnet Ropsten de Ethereum.
 Las funciones desarrolladas permiten:
