@@ -28,9 +28,16 @@ Para poder verificar todas nuestras transacciones sobre la Blockchain de Testing
 
 Para poder interactuar con la Blockchain de Ethereum, necesitamos hacerlo a través de un NODO. Para este caso usamos Infura que te permite crear tu propio nodo de modo gratuito, tanto para las redes testnet como la mainnet (Cantidades de transacciones limitadas en su versión gratuita). [Infura](https://infura.io/dashboard).
 
-**Libreria EthereumJs-tx**
+**Librería EthereumJs-tx**
 
-Libreria para poder realizar transacciones sobre la Blockchain de Ethereum. [EthereumJs-tx](https://github.com/ethereumjs/ethereumjs-tx).
+Librería para poder realizar transacciones sobre la Blockchain de Ethereum. [EthereumJs-tx](https://github.com/ethereumjs/ethereumjs-tx).
+
+**Precio del GAS de Ethereum**
+
+Ver en tiempo real el precio de GAS sobre la Blockchain de Ethereum. [Precio GAS](https://ethgasstation.info/).
+
+**Conversor de unidades de ETH**
+El siguiente enlace te permite convertir facilmente en cualquiera de las unidades en las que trabaja Ethereum. [Conversor](http://eth-converter.com/index.html).
 
 
 ### Mis Proyectos Web3
