@@ -37,6 +37,7 @@ Librería para poder realizar transacciones sobre la Blockchain de Ethereum. [Et
 Ver en tiempo real el precio de GAS sobre la Blockchain de Ethereum. [Precio GAS](https://ethgasstation.info/).
 
 **Conversor de unidades de ETH**
+
 El siguiente enlace te permite convertir facilmente en cualquiera de las unidades en las que trabaja Ethereum. [Conversor](http://eth-converter.com/index.html).
 
 
@@ -76,5 +77,23 @@ Las funciones desarrolladas permiten:
 Conceptos aprendidos:
 - *web3.eth.getTransactionCount(address, (err, NONCE)*: Permite llevar la cuenta de las transacciones realizadas con una misma Address.
 - *web3.eth.sendSignedTransaction()*: Como enviar una transacción empaquetada, firmada y serializada a la red de Testnet Ropsten de Ethereum.
+
+------------------------------------
+**EventBAT/app.js**
+
+¿Cómo arrancamos desde cero?
+1) Ingresar a "Visual Studio Code" y abrir el directorio en el cual vamos a trabajar. En nuestro caso: EventBAT.
+2) Abrir una terminal o consola para este directorio e instalar web3. Comando: npm i web3 (Esto nos crear una carpeta "node_modules" y un archivo "package-lock.json").
+3) Dentro del directorio "EventBAT", crear un archivo .js. En nuestro caso: app.js (Aquí escribimos nuestro código web3).
+4) Ejecutamos nuestra aplicación por terminal. Comando: node app.js
+
+En esta aplicación vas a encontrar la funcionalidad para poder conectarnos a cualquier Smart Contract e interactuar con el mismo. En este caso puntual, nos conectamos al contrato del Token BAT (Basic Attention Token) sobre la Blockchain Mainnet de Ethereum. Obtuvimos los datos desde Etherscan: [Datos del Contrato BAT](https://etherscan.io/address/0x0d8775f648430679a709e98d2b0cb6250d2887ef#code). 
+Las funciones desarrolladas permiten:
+1) Instanciar un Smart Contract público productivo.
+2) Leer eventos en tiempo real de un contrato.
+
+Conceptos aprendidos:
+- *web3.eth.getBlockNumber()*: Permite obtener el último bloque minado.
+- *contractBAT.getPastEvents('Event', { filter: {} }*: Nos permite filtrar desde la Blockchain, uno o todos los Eventos en un rango de Bloques.
 
 
