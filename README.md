@@ -96,4 +96,23 @@ Conceptos aprendidos:
 - *web3.eth.getBlockNumber()*: Permite obtener el último bloque minado.
 - *contractBAT.getPastEvents('Event', { filter: {} }*: Nos permite filtrar desde la Blockchain, uno o todos los Eventos en un rango de Bloques.
 
+------------------------------------
+**DeploySmartContract/app.js**
+
+¿Cómo arrancamos desde cero?
+1) Ingresar a "Visual Studio Code" y abrir el directorio en el cual vamos a trabajar. En nuestro caso: DeploySmartContract.
+2) Abrir una terminal o consola para este directorio e inicializar un proyecto NPM. Comando: npm init (Esto nos crear un archivo "package.json").
+3) Luego instalar lo necesario para manipurar Web3 en JavaScript, transacciones de Ethereum y Smart Contract en Solidity. Comando: npm i web3 ethereumjs-tx solc@0.5.0 (Esto nos crear una carpeta "node_modules" y un archivo "package-lock.json").
+4) Dentro del directorio "DeploySmartContract", crear un archivo .js. En nuestro caso: app.js (Aquí escribimos nuestro código web3).
+5) Dentro del mismo directorio, crear otro archivo .sol que contenga el Smart Contract que deseamos Deployar. En nuestro caso: Cars.sol (Solidity).
+6) Ejecutamos nuestra aplicación por terminal. Comando: node app.js
+
+En esta aplicación vas a encontrar la funcionalidad para poder realizar el DEPLOY de un Smart Contract con Web3. En este caso puntual, deployamos un contrato sobre la Blockchain de Testing "Ropsten" de Ethereum. Deploy del Contrato en Blockchain Ethereum Ropsten: 0x5C710D0C0478aAEd1A0a5E41E85BefbB8bA278dF. Se puede verificar en: [Contrato Cars](https://ropsten.etherscan.io/address/0x5c710d0c0478aaed1a0a5e41e85befbb8ba278df).  
+Las funciones desarrolladas permiten:
+1) Deploy de un Smart Contract con Web3.
+
+Conceptos aprendidos:
+- *Compilar Smart Contract*: Compilamos mediante código el Smart Contract y luego este objeto nos permite obtener el ByteCode necesario para poder Deployarlo.
+- *Deploy Smart Contract*: Realizamos un transaccion firmada desde la Address Owner (Dueño) y como destino usamos el ByteCode del Smart Contract a Deployar.
+
 
