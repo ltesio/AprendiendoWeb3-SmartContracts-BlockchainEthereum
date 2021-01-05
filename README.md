@@ -115,4 +115,22 @@ Conceptos aprendidos:
 - *Compilar Smart Contract*: Compilamos mediante código el Smart Contract y luego este objeto nos permite obtener el ByteCode necesario para poder Deployarlo.
 - *Deploy Smart Contract*: Realizamos un transaccion firmada desde la Address Owner (Dueño) y como destino usamos el ByteCode del Smart Contract a Deployar.
 
+------------------------------------
+**Wallet/app.js**
+
+¿Cómo arrancamos desde cero?
+1) Ingresar a "Visual Studio Code" y abrir el directorio en el cual vamos a trabajar. En nuestro caso: Wallet.
+2) Abrir una terminal o consola para este directorio e inicializar un proyecto NPM. Comando: npm init -y (Esto nos crear un archivo "package.json").
+3) Luego instalar web3. Comando: npm i web3 (Esto nos crear una carpeta "node_modules" y un archivo "package-lock.json").
+4) Dentro del directorio "Wallet", crear un archivo .js. En nuestro caso: app.js (Aquí escribimos nuestro código web3).
+5) Ejecutamos nuestra aplicación por terminal. Comando: node app.js
+
+En esta aplicación vas a encontrar la funcionalidad para poder generar una Wallet de Ethereum (Address pública y clave privada) con Web3.
+Las funciones desarrolladas permiten:
+1) Generar una Billetera de Ethereum con Web3.
+
+Conceptos aprendidos:
+- *web3.eth.accounts.create()*: Permite generar una billetera de Ethereum a partir de una cadena aleatoria.
+- *web3.eth.accounts.encrypt()*: Permite encriptar la clave privada de nuestra billetera para poder guardarla de modo seguro en nuestra base de datos.
+- *web3.eth.accounts.decrypt()*: Permite desencriptar la clave privada de nuestra billetera para poder recuperar o mover los fondos de la misma.
 
